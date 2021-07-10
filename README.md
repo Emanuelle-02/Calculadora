@@ -1,2 +1,2 @@
 # Calculadora - Atividade DDM
-Display Calculadora para treinar o uso de components e props. Botões da calculadora utilizados como componente.
+Calculadora para treinar o uso de components e props. Botões da calculadora utilizados como componente(atualizada com os botões e operações complemtamente funcionais).

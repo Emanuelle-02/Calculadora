@@ -1,16 +1,17 @@
 import React from 'react'
-import {StyleSheet, Text, TouchableOpacity} from 'react-native'
+import {StyleSheet, Text, TouchableHighlight} from 'react-native'
+
 
 
 export default props => {
   const stylesButton = [styles.botoes]
-  if (props.soma) stylesButton.push(styles.botaoSoma)
   if (props.apaga) stylesButton.push(styles.botaoApaga)
   if (props.resultado) stylesButton.push(styles.botaoResultado)
+  if (props.op) stylesButton.push(styles.botaoOp)
   return (
-      <TouchableOpacity onPress={() => props.onClick(props.texto)}>
+      <TouchableHighlight onPress={props.onClick}>
           <Text style={stylesButton}>{props.texto}</Text>
-      </TouchableOpacity>
+      </TouchableHighlight>
   )
 }
 
@@ -54,4 +55,12 @@ const styles = StyleSheet.create({
       borderColor: 'black',
       borderRadius: 10,
   },
+
+  botaoOp: {
+        width: 65,
+        height: 55,
+        borderRadius: 10,
+        textAlign: 'center',
+  }, 
+
 })
